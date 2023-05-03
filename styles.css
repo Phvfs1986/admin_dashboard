@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: minmax(230px, 230px) 1fr;
+  grid-template-rows: minmax(130px, 130px) 1fr;
+  height: 100vh;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 30px 1fr 30px 1fr;
+  background-color: rgb(197, 197, 197);
+  padding: 10px;
+  gap: 15px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.header-top,
+.header-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-left: 40px;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  height: 20px;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 80px 1fr 2.5fr;
+  background-color: antiquewhite;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  font-size: 25px;
+  padding: 15px;
+}
+
+.logo {
+  display: flex;
+  align-self: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.personal {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+}
+
+.menu button {
+  width: 3.5rem;
+}
+
+.projects {
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  box-shadow: 1px 1px 1px 1px;
+  align-items: center;
+  padding: 1rem;
+}
+
+.announcements {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  box-shadow: 1px 1px 1px 1px;
+  padding: 15px;
+}
+
+.trending {
+  display: grid;
+  box-shadow: 1px 1px 1px 1px;
+  grid-row-start: 4;
+  grid-row-end: 5;
+  padding: 15px;
+}
+
+.project-card,
+.announcements,
+.trending {
+  background-color: rgb(248, 248, 248);
+  border-radius: 4px;
+}
+
+.icon {
+  width: 15px;
+}
+
+.dash_logo {
+  width: 40px;
+}
+
+.cat-icon-big {
+  width: 50px;
+}
+
+.cat-icon-small {
+  width: 30px;
+}
+
+.title-projects {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.title-announcements {
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.title-trending {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.title {
+  align-self: center;
+}
